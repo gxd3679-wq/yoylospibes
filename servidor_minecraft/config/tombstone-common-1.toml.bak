@@ -1,0 +1,71 @@
+general = {}
+
+#Options related to player's death
+[player_death]
+	#Whether to unlock access to a grave if the player has been killed by another player [false/true|default:true]
+	pvp_unlock_grave = true
+	#Whether to restore beneficial effects after a player dies [false/true|default:true]
+	restore_effects_on_death = false
+	#Only abandoned graves can have losses of items (based on the decay_time) [false/true|default:true]
+	loss_on_death_only_for_abandoned_grave = true
+	#Only stackable items can be lost on death [false/true|default:true]
+	loss_on_death_only_for_stackable_items = true
+	#Prevents death outside the borders of the world [false/true|default:true]
+	prevent_death_outside_world_border = true
+	#Prevents death outside the build height [false/true|default:false]
+	prevent_death_outside_build_height = false
+	#Allows to fill an existing grave instead of creating a new one [false/true|default:true]
+	allow_to_fill_existing_grave = true
+	#Caps the duration of Ghostly Shape effect to 10 seconds when teleporting with a Grave's Key [false/true|default:true]
+	nerf_ghostly_shape_teleport_with_key = true
+	#The radius in which items should be collected when a grave is spawned [1..10|default:5]
+	#Range: 1 ~ 10
+	sniffer_range = 5
+	#The chance that creatures appear after the contents of a grave are retrieved [0..100|default:0]
+	#Range: 0 ~ 100
+	chance_mob_on_grave_recovery = 0
+	#Percent of stolen experience by killing a player when PvP mode is enabled [0..100|default:30]
+	#Range: 0 ~ 100
+	pvp_stolen_xp = 30
+	#The chance that some items are lost on death [0..100|default:0]
+	#Range: 0 ~ 100
+	chance_loss_on_death = 0
+	#The percentage of items that are lost on death [0..100|default:0]
+	#Range: 0 ~ 100
+	percent_loss_on_death = 0
+	#Graveless Dimensions
+	no_grave_dimension = []
+
+#Options related to player's alignment
+[alignment]
+	#Points for freeing a soul in a receptacle [0..500|default:50]
+	#Range: 0 ~ 500
+	points_free_soul_receptacle = 50
+	#Points for plundering a player's grave [-500..0|default:-10]
+	#Range: -500 ~ 0
+	points_plunder_player_grave = -10
+	#Points for zombie villager exorcism [0..500|default:20]
+	#Range: 0 ~ 500
+	points_exorcism_zombie_villager = 20
+	#Points for zombifying a villager [-500..0|default:-20]
+	#Range: -500 ~ 0
+	points_zombify_villager = -20
+	#Points for killing some entities decreasing alignment [-500..0|default:-10]
+	#Range: -500 ~ 0
+	points_kill_decreasing_alignment = -10
+	#Points for killing some entities increasing alignment [0..500|default:10]
+	#Range: 0 ~ 500
+	points_kill_increasing_alignment = 10
+	#Points for tablet of cupidity [-500..0|default:-10]
+	#Range: -500 ~ 0
+	points_tablet_of_cupidity = -10
+	#Points for Pray of Protection [0..500|default:20]
+	#Range: 0 ~ 500
+	points_pray_of_protection = 20
+	#Points for using a Potion of Earthly Garden [0..500|default:10]
+	#Range: 0 ~ 500
+	points_earthly_garden = 10
+	#Points for killing one of your tamed creatures [-500..0|default:-10]
+	#Range: -500 ~ 0
+	points_kill_tamed_creature = -10
+
